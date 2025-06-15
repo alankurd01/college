@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICT Course - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: 'Arial Rounded MT Bold', Arial, sans-serif; background: #f7f7f7; }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-bottom: 2px solid #d9d9d9;
+      padding: 0 20px;
+      height: 60px;
+      font-size: 18px;
+    }
+    .navbar .left, .navbar .right { display: flex; align-items: center; }
+    .navbar .menu { display: flex; align-items: center; }
+    .navbar .menu > div {
+      margin: 0 10px;
+      position: relative;
+      cursor: pointer;
+    }
+    .navbar .apply-now {
+      background: #7fff7f;
+      color: #222;
+      padding: 6px 18px;
+      border-radius: 5px;
+      margin-left: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #2c2;
+      transition: background 0.3s;
+    }
+    .navbar .apply-now:hover { background: #2c2; color: #fff; }
+    .navbar .right > * { margin-left: 16px; }
+    .navbar .social-icon { font-size: 20px; text-decoration: none; color: #222; margin-right: 5px; }
+    .navbar .logo { font-weight: bold; font-size: 22px; margin-right: 18px; }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      background: #7a16d4;
+      color: #fff;
+      padding: 48px 0 0 0;
+      min-height: 340px;
+      position: relative;
+    }
+    .hero-content {
+      padding-left: 60px;
+      flex: 1 1 400px;
+    }
+    .hero-title {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 46px;
+      font-weight: bold;
+      margin-bottom: 18px;
+      letter-spacing: 1.5px;
+    }
+    .hero-desc {
+      font-size: 19px;
+      line-height: 1.45;
+      max-width: 560px;
+    }
+    .hero-img {
+      flex: 1 1 350px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      min-width: 330px;
+      margin-top: -22px;
+      margin-right: 35px;
+    }
+    .hero-img img { width: 100%; max-width: 390px; border-radius: 24px; }
+
+    .footer {
+      background: linear-gradient(to top, #d9f4ff 80%, #eaeaff 100%);
+      padding: 36px 10vw 20px 10vw;
+      color: #1b1b1b;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 18px;
+      border-top: 2px solid #e3e3e3;
+    }
+    .footer-col {
+      flex: 1 1 160px;
+      min-width: 160px;
+      margin-bottom: 20px;
+    }
+    .footer-col strong {
+      font-size: 20px;
+      margin-bottom: 8px;
+      display: block;
+      letter-spacing: 0.5px;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col ul li { margin: 6px 0; }
+
+    .footer-contact, .footer-follow, .footer-links {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .footer-follow a {
+      margin-right: 12px;
+      color: #111;
+      font-size: 22px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-follow a:hover { color: #7a16d4; }
+    .footer-links a {
+      color: #444;
+      text-decoration: none;
+      margin-right: 18px;
+      font-size: 16px;
+    }
+    .footer-links a:hover { text-decoration: underline; }
+    .copyright {
+      text-align: right;
+      color: #666;
+      font-size: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      .hero { flex-direction: column; align-items: flex-start; padding-left: 0; }
+      .hero-content { padding: 32px 30px 0 30px; }
+      .hero-img { padding: 0 20px 0 20px; margin: 0; }
+      .footer { flex-direction: column; padding: 36px 24px 20px 24px; }
+      .copyright { text-align: left; margin-top: 18px; }
+    }
+  </style>
+  <!-- Icons CDN (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="left">
+      <a href="index.html" style="text-decoration:none; color:inherit;">Logo <i></i></a>
+      <div class="menu">
+        <span style="display:inline-block;width:24px"></span>
+        <a href="job.html" style="text-decoration:none; color:inherit;">Job <i></i></a>
+        <span style="display:inline-block;width:24px"></span>
+        <a href="students.html" style="text-decoration:none; color:inherit;">Students <i></i></a>
+        <span style="display:inline-block;width:24px"></span>
+        <a href="course.html" style="text-decoration:none; color:inherit;">Course <i></i></a>
+        <span style="display:inline-block;width:24px"></span>
+        <a href="apply.html" class="apply-now">Apply Now</a>
+      </div>
+    </div>
+    <div class="right">
+      <a href="contact.html" class="contact-link">Contact us</a>
+      <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="blog.html" class="blog-link">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-title">ICT Course</div>
+      <div class="hero-desc">
+        Welcome to our ICT hub! Whether you're just starting or looking to expand your tech skills, you'll find resources, tutorials, and the latest trends to help you succeed.<br>
+        Explore our course and community, and feel free to reach out if you need any help. Let's shape the future of tech together.
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="image1" alt="Group of students celebrating ICT course" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-col">
+      <strong>Course Locations</strong>
+      <ul>
+        <li>Manchester</li>
+        <li>London</li>
+        <li>West Midlands</li>
+        <li>National</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Students</strong>
+      <ul>
+        <li>Student Support</li>
+        <li>Resources</li>
+        <li>Job Vacancies</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Employers</strong>
+      <ul>
+        <li>Why us</li>
+        <li>Success Stories</li>
+        <li>Programmes</li>
+      </ul>
+    </div>
+    <div class="footer-col footer-contact">
+      <strong>Contact us</strong>
+      <div style="margin: 8px 0 0 0;">
+        <div style="font-weight: bold;">Call us now:</div>
+        <div>0121 450 9300</div>
+      </div>
+      <div class="footer-follow" style="margin-top: 12px;">
+        <span>Follow us</span><br>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="footer-links" style="margin-top: 18px;">
+        <a href="#">Our policies</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy;Copyright 2024 all rights reserved
+    </div>
+  </footer>
+</body>
+</html>
